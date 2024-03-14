@@ -2,9 +2,10 @@ package main
 
 import (
 	"fmt"
-	"go-book/ch4/github"
 	"log"
 	"os"
+
+	"github.com/aeagiraldelli/go-book/ch4/github"
 )
 
 func main() {
