@@ -12,7 +12,10 @@ func sum(vals ...int) int {
 
 func main() {
 	fmt.Println(sum())
-	fmt.Println(sum(2, 3))
 	fmt.Println(sum(3, 5))
 	fmt.Println(sum(3, 5, 7))
+
+	values := []int{1, 2, 3, 4, 5, 6, 7}
+	total := sum(values...)
+	fmt.Println(total)
 }
