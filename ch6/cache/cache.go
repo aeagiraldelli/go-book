@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"sync"
+	"time"
 )
 
 var cache = struct {
@@ -22,4 +23,7 @@ func main() {
 	cache.mapping["key"] = "map value"
 	value := lookup("key")
 	fmt.Println(value)
+
+	const dayDuration = time.Hour * 24
+	fmt.Println(dayDuration.Seconds())
 }
