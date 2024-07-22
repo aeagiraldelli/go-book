@@ -14,8 +14,8 @@ func main() {
 			fmt.Fprintf(os.Stderr, "cf: %v\n", err)
 			os.Exit(1)
 		}
-		f := tempconv.Fahreinheit(t)
-		c := tempconv.Celcius(t)
+		f := tempconv.Fahrenheit(t)
+		c := tempconv.Celsius(t)
 		fmt.Printf("%s = %s, %s = %s\n",
 			f, tempconv.FToC(f), c, tempconv.CToF(c))
 	}

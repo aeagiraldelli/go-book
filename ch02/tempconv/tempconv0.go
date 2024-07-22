@@ -3,28 +3,28 @@ package tempconv
 import "fmt"
 
 type (
-	Celcius     float64
-	Fahreinheit float64
+	Celsius    float64
+	Fahrenheit float64
 )
 
 const (
-	AbsoluteZeroC Celcius = -273.15
-	FreezingC     Celcius = 0
-	BoilingC      Celcius = 100
+	AbsoluteZeroC Celsius = -273.15
+	FreezingC     Celsius = 0
+	BoilingC      Celsius = 100
 )
 
-func CToF(c Celcius) Fahreinheit {
-	return Fahreinheit(c*9/5 + 32)
+func CToF(c Celsius) Fahrenheit {
+	return Fahrenheit(c*9/5 + 32)
 }
 
-func FToC(f Fahreinheit) Celcius {
-	return Celcius((f - 32) * 5 / 9)
+func FToC(f Fahrenheit) Celsius {
+	return Celsius((f - 32) * 5 / 9)
 }
 
-func (c Celcius) String() string {
+func (c Celsius) String() string {
 	return fmt.Sprintf("%g°C", c)
 }
 
-func (f Fahreinheit) String() string {
+func (f Fahrenheit) String() string {
 	return fmt.Sprintf("%g°F", f)
 }
